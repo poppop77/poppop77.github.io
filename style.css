@@ -22,7 +22,7 @@ body{
 
 
 header{
-    background-color: red;
+    background: linear-gradient(to right, #0096e1, #f09bbe);
     width: 100%;
     height: 200px;
     display: flex;
@@ -31,8 +31,8 @@ header{
 }
 
 .caixa_texto_titulo{
-    background-color: aliceblue;
-    border: solid 1px yellow;
+    
+   
     margin-left: 40%;
     width: 50%;
     height: 50%;
@@ -93,9 +93,10 @@ section{
 
 
 .bloco_3{
+    border: solid 5px yellow;
     width: 100%;
     height: 24vmax;
-    background-color: rgb(218, 63, 89);
+    background-color: rgb(243, 239, 240);
     
 }
 
@@ -108,7 +109,7 @@ section{
 footer{
     font-size: 12px;
     font-family: 'Lato', sans-serif;
-    background-color: red;
+    background: linear-gradient(to right, #0096e1, #f09bbe);
     width: 100%;
     height: 100px;
 }
@@ -116,7 +117,7 @@ footer{
     padding-left: 10px;
     display: flex;
     align-items: center;
-    background-color: yellow;
+    background: linear-gradient(to right, #0096e1, #f09bbe);
     width: 40;
     height: 100px;
 
@@ -131,7 +132,17 @@ footer{
 
 @media (max-width: 450px) {
 
-    .para_mobile{
+    
+.bloco_3{
+    border: solid 5px yellow;
+    width: 100%;
+    height: 26vmax;
+    background-color: rgb(243, 239, 240);
+
+    
+}
+
+  .para_mobile{
         height: 50%;
         width: 50%;
         background-color: blue;
@@ -139,8 +150,8 @@ footer{
     .caixa_texto_titulo{
         visibility:hidden;  
         position: absolute;
-        background-color: aliceblue;
-        border: solid 1px yellow;
+        
+        
         margin-left: 40%;
         width: 50%;
         height: 50%;
@@ -156,14 +167,14 @@ footer{
    
     .direitos{
         
-        border: solid 5px rgb(121, 3, 72);
+        background: linear-gradient(to right, #0096e1, #f09bbe);
         height: 80px;
     }
 
     footer{
          /*TESTEEEEEEE*/
-        margin-top: 40%;
-        background-color: blue;
+        margin-top: 50%;
+        background: linear-gradient(to right, #0096e1, #f09bbe);
         width: 100%;
         height: 100px;
         display: flex;
@@ -180,7 +191,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: green;
+    
     width: 60%;
     height: 100px;
 }
@@ -206,7 +217,7 @@ footer{
     display: flex;
     align-items: center;
     margin-left: 1%;
-    background-color: green;
+    
     width: 15%;
     height: 40px;
 }
@@ -228,7 +239,7 @@ footer{
 
 .logo_base{
 
-    background-color: yellow;
+    
     width: 35%;
     height: 30%;
 }
@@ -243,7 +254,7 @@ footer{
     margin-top: -2%;
     height: 50%;
     width: 100%;
-    background-color: yellow;
+    
     font-family: 'Lato', sans-serif;
 }
 
@@ -252,7 +263,7 @@ footer{
     margin-top: -4%;
     height: 40%;
     width: 100%;
-    background-color: rgb(71, 231, 71);
+    
     font-family: 'Lato', sans-serif;
     
 }
@@ -264,7 +275,7 @@ footer{
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: green;
+        
         width: 60%;
         height: 100px;
     }
@@ -289,8 +300,8 @@ footer{
         display: flex;
         align-items: center;
         margin-left: 1%;
-        background-color: green;
-        width: 35%;
+        
+        width: 40%;
         height: 40px;
     }
     
@@ -313,7 +324,7 @@ footer{
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: yellow;
+        
         width: 100%;
         height: 30%;
         
@@ -330,7 +341,7 @@ footer{
         margin-top: -2%;
         height: 50%;
         width: 100%;
-        background-color: yellow;
+        
         font-family: 'Lato', sans-serif;
         visibility:hidden;
     }
@@ -340,7 +351,7 @@ footer{
         margin-top: -4%;
         height: 40%;
         width: 100%;
-        background-color: rgb(71, 231, 71);
+       
         font-family: 'Lato', sans-serif;
         
     }
@@ -379,8 +390,7 @@ body{
 
 
 header{
-    /*TESTEEEEEEE*/
-    background-color: red;
+    background: linear-gradient(to right, #0096e1, #f09bbe);
     width: 100%;
     height: 170px;
     

@@ -7,8 +7,22 @@
     <title>Fala Capixaba!</title>
 </head>
 <body>
-    <div id="div1" class="box">div1</div>
-    <div id="div2" class="box">div2</div>
+    <div id="div1" class="box"><img id="logo" src="logo_sem_fundo_falacapixaba.png" alt="logo"><div id="caixa_de_texto">Denúncias: Saúde pública,
+        Saneamento básico precário, Serviços públicos em geral, Promessas não cumpridas, Descaso com a população, etc...
+       </div></div>
+    <div id="div2" class="box">
+        <form action="processar_formulario.php" method="POST">
+        <label for="nome">Bairro</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label id="email" for="email">Email:</label>
+        <input  type="email" id="email" name="email" required>
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" required>
+
+        <input type="submit" value="Confirmar Presença">
+    </form></div>
     <div id="div3" class="box">div3</div>
     
     

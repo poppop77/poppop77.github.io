@@ -21,10 +21,28 @@ body{
     margin-top: 2%;
     width: 95%;
     background-color: aqua;
-    min-height: 30vh;
+    
+    display: flex;
+    align-items: center;
 
 }
 
+#logo{
+    margin-left: 2%;
+    width: 22%;
+    
+
+}
+
+#caixa_de_texto{
+    display: flex;
+    align-items: center;
+    margin-left: 6%;
+    background-color: blue;
+    width: 60%;
+    height: 180px;
+    
+}
 
 #div2{
     width: 95%;
@@ -64,6 +82,22 @@ body{
         background-color: rgb(173, 41, 140);
         
     }
+
+  
+#caixa_de_texto{
+   
+    margin-left: 1%;
+    background-color: rgb(255, 0, 191);
+    width: 60%;
+    height: 180px;
+    
+}
+
+#logo{
+    margin-left: 0%;
+    width: 40%;
+
+}
 
     
 }

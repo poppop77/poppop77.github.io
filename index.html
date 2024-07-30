@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Simples com Blocos Coloridos</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+        .block, .image-block {
+            width: 90%;
+            max-width: 600px;
+            height: 100px;
+            margin: 10px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .block:nth-child(2) { background-color: #FF5733; }
+        .block:nth-child(3) { background-color: #33FF57; }
+        .block:nth-child(4) { background-color: #3357FF; }
+        .block:nth-child(5) { background-color: #FF33A1; }
+        .block:nth-child(6) { background-color: #FF8F33; }
+        .block:nth-child(7) { background-color: #8FFF33; }
+        .block:nth-child(8) { background-color: #33FF8F; }
+        .block:nth-child(9) { background-color: #33A1FF; }
+        .block:nth-child(10) { background-color: #8F33FF; }
+        .block:nth-child(11) { background-color: #A133FF; }
+        .block:nth-child(12) { background-color: #FF338F; }
+        .block:nth-child(13) { background-color: #FF5733; }
+        .block:nth-child(14) { background-color: #33FF57; }
+
+        .block:hover, .image-block:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .image-block {
+            background-image: url(img/img_principal/PRINCIPAL.png); /* Substitua 'sua-imagem.jpg' pelo caminho da sua imagem */
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Estilos para o pop-up */
+        .popup {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .popup-content {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+            max-width: 90%;
+        }
+
+        .popup-content h2 {
+            margin-top: 0;
+        }
+
+        .popup-content p {
+            margin-bottom: 20px;
+        }
+
+        .popup-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .popup-buttons a {
+            padding: 10px 20px;
+            font-size: 16px;
+            background: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        .popup-buttons a:hover {
+            background: #555;
+            transform: scale(1.05);
+        }
+
+        .popup-buttons a:active {
+            transform: scale(0.95);
+        }
+
+        /* Estilo para mostrar o pop-up quando o alvo é acionado */
+        .popup:target {
+            display: flex;
+        }
+
+        /* Responsivo */
+        @media (max-width: 600px) {
+            .block, .image-block {
+                height: 80px;
+                font-size: 18px;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .block, .image-block {
+                height: 60px;
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image-block"></div>
+        <a href="#popup1" class="block">Bloco 1</a>
+        <a href="#popup2" class="block">Bloco 2</a>
+        <a href="#popup3" class="block">Bloco 3</a>
+        <a href="#popup4" class="block">Bloco 4</a>
+        <a href="#popup5" class="block">Bloco 5</a>
+        <a href="#popup6" class="block">Bloco 6</a>
+        <a href="#popup7" class="block">Bloco 7</a>
+        <a href="#popup8" class="block">Bloco 8</a>
+        <a href="#popup9" class="block">Bloco 9</a>
+        <a href="#popup10" class="block">Bloco 10</a>
+        <a href="#popup11" class="block">Bloco 11</a>
+        <a href="#popup12" class="block">Bloco 12</a>
+        <a href="#popup13" class="block">Bloco 13</a>
+    </div>
+
+    <!-- Pop-ups -->
+    <div id="popup1" class="popup">
+        <div class="popup-content">
+            <h2>Texto do Bloco 1</h2>
+            <p>Descrição do Bloco 1</p>
+            <div class="popup-buttons">
+                <a href="#popup13">Anterior</a>
+                <a href="#popup2">Próximo</a>
+                <a href="#">Fechar</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup2" class="popup">
+        <div class="popup-content">
+            <h2>Texto do Bloco 2</h2>
+            <p>Descrição do Bloco 2</p>
+            <div class="popup-buttons">
+                <a href="#popup1">Anterior</a>
+                <a href="#popup3">Próximo</a>
+                <a href="#">Fechar</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup3" class="popup">
+        <div class="popup-content">
+            <h2>Texto do Bloco 3</h2>
+            <p>Descrição do Bloco 3</p>
+            <div class="popup-buttons">
+                <a href="#popup2">Anterior</a>
+                <a href="#popup4">Próximo</a>
+                <a href="#">Fechar</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Adicione pop-ups adicionais conforme necessário -->
+    <div id="popup4" class="popup">
+        <div class="popup-content">
+            <h2>Texto do Bloco 4</h2>
+            <p>Descrição do Bloco 4</p>
+            <div class="popup-buttons">
+                <a href="#popup3">Anterior</a>
+                <a href="#popup5">Próximo</a>
+                <a href="#">Fechar</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup5" class="popup">
+        <div class="popup-content">
+            <h2>Texto do Bloco 5</h2>
+            <p>Descrição do Bloco 5</p>
+            <div class="popup-buttons">
+                <a href="#popup4">Anterior</a>
+                <a href="#popup6">Próximo</a>
+                <a href="#">Fechar</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup6" class="popup">
+        <div class="popup-content">
+            <h2>Texto do Bloco 6</h2>
+            <p>Descrição do Bloco 6</p>
+            <div class="popup-buttons">
+                <a href="#popup5">Anterior</a>
+                <a href="#popup7">Próximo</a>
+                <a href="#">Fechar</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup7" class="popup">
+        <div class="popup-content">
+            <h2>Texto do Bloco 7</h2>
+            <p>Descrição do Bloco 7</p>
+            <div class="popup-buttons">
+                <a href="#popup6">Anterior</a>
+                <a href="#popup8">Próximo</a>
+                <a href="#">Fechar</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup8" class="popup">
+        <div class="popup-content">
+            <h2>Texto do Bloco 8</h2>
+            <p>Descrição do Bloco 8</p>
+            <div class="popup-buttons">
+                <a href="#popup7">Anterior</a>
+                <a href="#popup9">Próximo</a>
+                <a href="#">Fechar</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup9" class="popup">
+        <div class="popup-content">
+            <h2>Texto do Bloco 9</h2>
+            <p>Descrição do Bloco 9</p>
+            <div class="popup-buttons">
+                <a href="#popup8">Anterior</a>
+                <a href="#popup10">Próximo</a>
+                <a href="#">Fechar</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup10" class="popup">
+        <div class="popup-content">
+            <h2>Texto do Bloco 10</h2>
+            <p>Descrição do Bloco 10</p>
+            <div class="popup-buttons">
+                <a href="#popup9">Anterior</a>
+                <a href="#popup11">Próximo</a>
+                <a href="#">Fechar</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup11" class="popup">
+        <div class="popup-content">
+            <h2>Texto do Bloco 11</h2>
+            <p>Descrição do Bloco 11</p>
+            <div class="popup-buttons">
+                <a href="#popup10">Anterior</a>
+                <a href="#popup12">Próximo</a>
+                <a href="#">Fechar</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup12" class="popup">
+        <div class="popup-content">
+            <h2>Texto do Bloco 12</h2>
+            <p>Descrição do Bloco 12</p>
+            <div class="popup-buttons">
+                <a href="#popup11">Anterior</a>
+                <a href="#popup13">Próximo</a>
+                <a href="#">Fechar</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup13" class="popup">
+        <div class="popup-content">
+            <h2>Texto do Bloco 13</h2>
+            <p>Descrição do Bloco 13</p>
+            <div class="popup-buttons">
+                <a href="#popup12">Anterior</a>
+                <a href="#popup1">Próximo</a>
+                <a href="#">Fechar</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

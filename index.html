@@ -3,10 +3,210 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Propostas | Theylon Soares</title>
+    <title>PEDIDOS | NOME SUA LOJA</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Poppins:ital,wght@1,900&display=swap" rel="stylesheet">
+
+
+    <body>
+
+
+
+    
+        <div class="container">
+            <a  class="image-block"></a>
+            <a href="#popup1" class="block">TAMANHO E QUANTIDADE</a>
+            <a href="#popup2" class="block">OPÇÕES DE CARNE</a>
+            <a href="#popup3" class="block">GUARNIÇÕES</a>
+            <a href="#popup4" class="block">SALADAS</a>
+            <a href="#popup5" class="block">BEBIDAS</a>
+            
+            <a href="#popup6" class="block">FORMA DE PAGAMENTO</a>
+            <!--DESATIVADOS
+            <a href="#popup7" class="block">-----</a>
+            
+            <a href="#popup8" class="block">TESTE4</a>
+            <a href="#popup9" class="block">TESTE5</a>
+            <a href="#popup10" class="block">TESTE6</a>
+            <a href="#popup11" class="block">TESTE7</a>
+            DESATIVADOS-->
+        </div>
+    
+        <!-- Pop-ups -->
+        <div id="popup1" class="popup">
+            <div class="popup-content">
+                <span class="close-btn" onclick="window.location.href='#'">&times;</span>
+                <h3>QUANTIDADE</h3>
+    <div class="quantidade-options">
+        <div class="option">
+            <input type="checkbox" id="outra1">
+            <label for="outra1"> <strong>*1 MARMITA!*</strong></label>
+        </div>
+        
+    </div>
+    
+                <div class="separator"></div> <!-- Linha separadora -->
+                <h2>TAMANHO MARMITA</h2>
+                <h6 id="umaopção">Selecione 1 opção!</h6>
+                
+                    <div class="option">
+                        <input type="checkbox" id="saude001" name="tamanho-marmita" value="pequena">
+                        <label for="saude001"><strong>*R$17,00 | PEQUENA - (C/Churrasco R$20,00)*</strong></label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="saude002" name="tamanho-marmita" value="grande">
+                        <label for="saude002"><strong>*R$22,00 | GRANDE - (C/Churrasco R$25,00)*</strong></label>
+                    </div>
+    
+                
+                <div class="popup-buttons">
+                    <a href="#popup1" class="prev">Anterior</a>
+                    <a href="#popup2" class="next">Próximo</a>
+                    <a href="#finalizarPedido">Finalizar Pedido</a>
+                </div>
+            </div>
+        </div>
+        
+    
+        <div id="popup2" class="popup">
+            <div class="popup-content">
+                <span class="close-btn" onclick="window.location.href='#'">&times;</span>
+                <h2>OPÇÕES DE CARNE</h2>
+                    <div class="option">
+                        <input type="checkbox" id="saude1" name="opcao-carne" value="churrasco">
+                        <label for="saude1">Churrasco</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="saude2" name="opcao-carne" value="frango-frito">
+                        <label for="saude2">Frango frito</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="saude3" name="opcao-carne" value="moqueca-peixe">
+                        <label for="saude3">Moqueca de peixe</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="saude4" name="opcao-carne" value="costela-ensopada">
+                        <label for="saude4">Costela ensopada</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="saude5" name="opcao-carne" value="frango-empanado">
+                        <label for="saude5">Frango Empanado</label>
+                    </div>
+    
+                <div class="popup-buttons">
+                    <a href="#popup1" class="prev">Anterior</a>
+                    <a href="#popup3" class="next">Próximo</a>
+                    <a href="#finalizarPedido">Finalizar Pedido</a>
+                </div>
+            </div>
+        </div>
+    
+        <div id="popup3" class="popup">
+            <div class="popup-content">
+                <span class="close-btn" onclick="window.location.href='#'">&times;</span>
+                <h2>GUARNIÇÕES</h2>
+                <div class="option"><input type="checkbox" id="mulher1"><label for="mulher1">Arroz branco</label></div>
+                <div class="option"><input type="checkbox" id="mulher2"><label for="mulher2">Feijão em caldo</label></div>
+                <div class="option"><input type="checkbox" id="mulher3"><label for="mulher3">Feijão tropeiro</label></div>
+                <div class="option"><input type="checkbox" id="mulher4"><label for="mulher4">Macarrão</label></div>
+                <div class="option"><input type="checkbox" id="mulher1"><label for="mulher1">Farofa</label></div>
+                <div class="option"><input type="checkbox" id="mulher2"><label for="mulher2">Polenta</label></div>
+                <div class="option"><input type="checkbox" id="mulher3"><label for="mulher3">Pirão</label></div>
+                <div class="option"><input type="checkbox" id="mulher4"><label for="mulher4">Batata frita</label></div>
+                <div class="option"><input type="checkbox" id="mulher4"><label for="mulher4">Suflê</label></div>
+                <div class="popup-buttons">
+                    <a href="#popup2" class="prev">Anterior</a>
+                    <a href="#popup4" class="next">Próximo</a>
+                    <a href="#finalizarPedido">Finalizar Pedido</a>
+                </div>
+            </div>
+        </div>
+    
+        <div id="popup4" class="popup">
+            <div class="popup-content">
+                <span class="close-btn" onclick="window.location.href='#'">&times;</span>
+                <h2>SALADAS</h2>
+                <div class="option"><input type="checkbox" id="seguranca1"><label for="seguranca1">Maionese</label></div>
+                <div class="option"><input type="checkbox" id="seguranca2"><label for="seguranca2">Alface com tomate</label></div>
+                <div class="option"><input type="checkbox" id="seguranca3"><label for="seguranca3">Tomate com cebola</label></div>
+                <div class="option"><input type="checkbox" id="seguranca4"><label for="seguranca4">Rúcula com manga</label></div>
+                <div class="option"><input type="checkbox" id="seguranca4"><label for="seguranca4">Pepino com tomate</label></div>
+                <div class="option"><input type="checkbox" id="seguranca4"><label for="seguranca4">Brócolis com cenoura</label></div>
+    
+                <div class="popup-buttons">
+                    <a href="#popup3" class="prev">Anterior</a>
+                    <a href="#popup5" class="next">Próximo</a>
+                    <a href="#finalizarPedido">Finalizar Pedido</a>
+                </div>
+            </div>
+        </div>
+    
+        <div id="popup5" class="popup">
+            <div class="popup-content">
+                <span class="close-btn" onclick="window.location.href='#'">&times;</span>
+                <h2>BEBIDAS</h2>
+                <div class="option"><input type="checkbox" id="educacao1"><label for="educacao1"><strong> - R$10,00</strong>| Refrigerante 1,5  </label></div>
+                <div class="option"><input type="checkbox" id="educacao2"><label for="educacao2"><strong> - R$8,00</strong> | Refrigerante 600 ml</label></div>
+                <div class="option"><input type="checkbox" id="educacao3"><label for="educacao3"><strong> - R$6,00</strong>| Refrigerante Lata </label></div>
+                <div class="option"><input type="checkbox" id="educacao4"><label for="educacao4"><strong> - R$6,00</strong>| Refrigerante H2o </label></div>
+                <div class="option"><input type="checkbox" id="educacao5"><label for="educacao5"> <strong> - R$3,00</strong>| Juninho Sabores</label></div>
+                <div class="option"><input type="checkbox" id="educacao4"><label for="educacao4"><strong> - R$6,00</strong>| Skinka  </label></div>
+                <div class="option"><input type="checkbox" id="educacao5"><label for="educacao5"><strong> - R$7,00</strong>| Suco de Polpa 500 ml </label></div>
+                <div class="popup-buttons">
+                    <a href="#popup4" class="prev">Anterior</a>
+                    <a href="#popup6" class="next">Próximo</a>
+                    <a href="#finalizarPedido">Finalizar Pedido</a>
+                </div>
+            </div>
+        </div>
+        
+        <div id="popup6" class="popup">
+            <div class="popup-content">
+                <span class="close-btn" onclick="window.location.href='#'">&times;</span>
+                <h2>BEBIDAS</h2>
+                <div class="option"><input type="checkbox" id="educacao1"><label for="educacao1"><strong> > PIX</strong><h3 id="ENVIARCOMPROVANTE">  ENVIAR COMPROVANTE! </h3> </label></div>
+                <div class="option"><input type="checkbox" id="educacao2"><label for="educacao2"><strong> > DINHEIRO  </strong><h3 id="ENVIARCOMPROVANTE">&nbsp;|  INFORMAR TROCO! </h3></label></div>
+                <div class="option"><input type="checkbox" id="educacao3"><label for="educacao3"><strong> > CARTÃO  </strong> <h3 id="ENVIARCOMPROVANTE">&nbsp;| INFORMAR BANDEIRA! </h3> </label></div>
+                
+    
+                    <div class="popup-buttons">
+                        <a href="#popup5" class="prev">Anterior</a>
+                        <a href="#popup7" class="next">Próximo</a>
+                        <a href="#finalizarPedido">Finalizar Pedido</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        
+        
+        
+        
+        <!-- ... outros pop-ups semelhantes ... -->
+    
+        <div class="container">
+            <a href="#finalizarPedido" class="block" style="background-color: rgb(235, 7, 7)">Finalizar Pedido</a>
+        </div>
+    
+        <div id="finalizarPedido" class="popup">
+            <div class="popup-content">
+                <span class="close-btn" onclick="window.location.href='#'">&times;</span>
+                <h2>Opções Selecionadas</h2>
+                <p id="selectedOptions"></p>
+                <div class="popup-buttons">
+                    <a href="#" id="copyBtn">Copiar Descrição</a>
+                    <a href="#" id="clearBtn">Limpar Tudo</a>
+                    <a href="#" id="whatsappBtn">Enviar pelo WhatsApp</a>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
     <style>
         body {
             margin: 0;
@@ -162,7 +362,7 @@
             .block, .image-block {
                 height: 80px;
                 font-size: 18px;
-            }
+            }}
 
             @media (max-width: 600px) {
             .image-block {
@@ -260,168 +460,63 @@
 
 
 
+
+
+/* Adicionando estilo para o formulário */
+#address-form {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px; /* Espaçamento entre os campos */
+    margin-left: -15%;
+}
+
+.form-group label {
+    width: 120px; /* Largura fixa para labels, ajuste conforme necessário */
+    margin-right: 10px; /* Espaço entre o label e o campo de entrada */
+    text-align: right; /* Alinha o texto à direita do espaço disponível */
+}
+
+.form-group input {
+    flex: 1; /* O campo de entrada ocupa o restante do espaço */
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+/* Adicionando margem inferior às opções dos botões */
+.popup-buttons a {
+    margin-right: 10px; /* Espaço entre os botões */
+}
+
+#umaopção{
+    margin-top: -5%;
+    color: red;
+}
+
+
+#ENVIARCOMPROVANTE{
+    font-size: 80%;
+    
+    color: red;
+
+}
+
+#linha{
+    display: none;
+}
+
+
+
     </style>
 </head>
 
 
-<body>
 
-
-
-    
-    <div class="container">
-        <a  class="image-block"></a>
-        <a href="#popup1" class="block">TAMANHO E QUANTIDADE</a>
-        <a href="#popup2" class="block">OPÇÕES DE CARNE</a>
-        <a href="#popup3" class="block">GUARNIÇÕES</a>
-        <a href="#popup4" class="block">SALADAS</a>
-        <a href="#popup5" class="block">BEBIDAS</a>
-        
-        <!--DESATIVADOS
-        <a href="#popup6" class="block">TESTE2</a>
-        <a href="#popup7" class="block">TESTE3</a>
-        <a href="#popup8" class="block">TESTE4</a>
-        <a href="#popup9" class="block">TESTE5</a>
-        <a href="#popup10" class="block">TESTE6</a>
-        <a href="#popup11" class="block">TESTE7</a>
-        DESATIVADOS-->
-    </div>
-
-    <!-- Pop-ups -->
-    <div id="popup1" class="popup">
-        <div class="popup-content">
-            <span class="close-btn" onclick="window.location.href='#'">&times;</span>
-            <h3>QUANTIDADE</h3>
-<div class="quantidade-options">
-    <div class="option">
-        <input type="checkbox" id="outra1">
-        <label for="outra1"> <strong>*1*</strong></label>
-    </div>
-    <div class="option">
-        <input type="checkbox" id="outra2">
-        <label for="outra2"> <strong>*2*</strong></label>
-    </div>
-    <div class="option">
-        <input type="checkbox" id="outra3">
-        <label for="outra3"> <strong>*3*</strong></label>
-    </div>
-    <div class="option">
-        <input type="checkbox" id="outra4">
-        <label for="outra4"> <strong>*4*</strong></label>
-    </div>
-</div>
-
-            <div class="separator"></div> <!-- Linha separadora -->
-            <h2>TAMANHO MARMITA</h2>
-            <div class="option"><input type="checkbox" id="saude1"><label for="saude1"> <strong>*PEQUENA R$:17,00 (C/Churrasco R$:20,00)*</strong></label></div>
-            <div class="option"><input type="checkbox" id="saude1"><label for="saude1"> <strong>*GRANDE R$:22,00 (C/Churrasco R$:25,00)* </strong></label></div>
-            
-            
-            <div class="popup-buttons">
-                <a href="#popup1" class="prev">Anterior</a>
-                <a href="#popup2" class="next">Próximo</a>
-                <a href="#finalizarPedido">Finalizar Pedido</a>
-            </div>
-        </div>
-    </div>
-    
-
-    <div id="popup2" class="popup">
-        <div class="popup-content">
-            <span class="close-btn" onclick="window.location.href='#'">&times;</span>
-            <h2>OPÇÕES DE CARNE</h2>
-            <div class="option"><input type="checkbox" id="saude1"><label for="saude1">Churrasco</label></div>
-            <div class="option"><input type="checkbox" id="saude2"><label for="saude2"> Frango frito</label></div>
-            <div class="option"><input type="checkbox" id="saude3"><label for="saude3"> Moqueca de peixe</label></div>
-            <div class="option"><input type="checkbox" id="saude4"><label for="saude4"> Costela ensopada</label></div>
-            <div class="option"><input type="checkbox" id="saude5"><label for="saude5"> Frango Empanado</label></div>
-            
-            <div class="popup-buttons">
-                <a href="#popup1" class="prev">Anterior</a>
-                <a href="#popup3" class="next">Próximo</a>
-                <a href="#finalizarPedido">Finalizar Pedido</a>
-            </div>
-        </div>
-    </div>
-
-    <div id="popup3" class="popup">
-        <div class="popup-content">
-            <span class="close-btn" onclick="window.location.href='#'">&times;</span>
-            <h2>GUARNIÇÕES</h2>
-            <div class="option"><input type="checkbox" id="mulher1"><label for="mulher1">Arroz branco</label></div>
-            <div class="option"><input type="checkbox" id="mulher2"><label for="mulher2">Feijão em caldo</label></div>
-            <div class="option"><input type="checkbox" id="mulher3"><label for="mulher3">Feijão tropeiro</label></div>
-            <div class="option"><input type="checkbox" id="mulher4"><label for="mulher4">Macarrão</label></div>
-            <div class="option"><input type="checkbox" id="mulher1"><label for="mulher1">Farofa</label></div>
-            <div class="option"><input type="checkbox" id="mulher2"><label for="mulher2">Polenta</label></div>
-            <div class="option"><input type="checkbox" id="mulher3"><label for="mulher3">Pirão</label></div>
-            <div class="option"><input type="checkbox" id="mulher4"><label for="mulher4">Batata frita</label></div>
-            <div class="option"><input type="checkbox" id="mulher4"><label for="mulher4">Suflê</label></div>
-            <div class="popup-buttons">
-                <a href="#popup2" class="prev">Anterior</a>
-                <a href="#popup4" class="next">Próximo</a>
-                <a href="#finalizarPedido">Finalizar Pedido</a>
-            </div>
-        </div>
-    </div>
-
-    <div id="popup4" class="popup">
-        <div class="popup-content">
-            <span class="close-btn" onclick="window.location.href='#'">&times;</span>
-            <h2>SALADAS</h2>
-            <div class="option"><input type="checkbox" id="seguranca1"><label for="seguranca1">Maionese</label></div>
-            <div class="option"><input type="checkbox" id="seguranca2"><label for="seguranca2">Alface com tomate</label></div>
-            <div class="option"><input type="checkbox" id="seguranca3"><label for="seguranca3">Tomate com cebola</label></div>
-            <div class="option"><input type="checkbox" id="seguranca4"><label for="seguranca4">Rúcula com manga</label></div>
-            <div class="option"><input type="checkbox" id="seguranca4"><label for="seguranca4">Pepino com tomate</label></div>
-            <div class="option"><input type="checkbox" id="seguranca4"><label for="seguranca4">Brócolis com cenoura</label></div>
-
-            <div class="popup-buttons">
-                <a href="#popup3" class="prev">Anterior</a>
-                <a href="#popup5" class="next">Próximo</a>
-                <a href="#finalizarPedido">Finalizar Pedido</a>
-            </div>
-        </div>
-    </div>
-
-    <div id="popup5" class="popup">
-        <div class="popup-content">
-            <span class="close-btn" onclick="window.location.href='#'">&times;</span>
-            <h2>BEBIDAS</h2>
-            <div class="option"><input type="checkbox" id="educacao1"><label for="educacao1">Refrigerante 1,5  <strong> - R$10,00</strong></label></div>
-            <div class="option"><input type="checkbox" id="educacao2"><label for="educacao2">Refrigerante 600 ml<strong> - R$8,00</strong> </label></div>
-            <div class="option"><input type="checkbox" id="educacao3"><label for="educacao3">Refrigerante Lata <strong> - R$6,00</strong> </label></div>
-            <div class="option"><input type="checkbox" id="educacao4"><label for="educacao4">Refrigerante H2o <strong> - R$6,00</strong> </label></div>
-            <div class="option"><input type="checkbox" id="educacao5"><label for="educacao5">Juninho Sabores <strong> - R$3,00</strong> </label></div>
-            <div class="option"><input type="checkbox" id="educacao4"><label for="educacao4">Skinka  <strong> - R$6,00</strong> </label></div>
-            <div class="option"><input type="checkbox" id="educacao5"><label for="educacao5">Suco de Polpa 500 ml <strong> - R$7,00</strong> </label></div>
-            <div class="popup-buttons">
-                <a href="#popup4" class="prev">Anterior</a>
-                <a href="#popup1" class="next">Próximo</a>
-                <a href="#finalizarPedido">Finalizar Pedido</a>
-            </div>
-        </div>
-    </div>
-    
-
-    <!-- ... outros pop-ups semelhantes ... -->
-
-    <div class="container">
-        <a href="#finalizarPedido" class="block" style="background-color: green">Finalizar Pedido</a>
-    </div>
-
-    <div id="finalizarPedido" class="popup">
-        <div class="popup-content">
-            <span class="close-btn" onclick="window.location.href='#'">&times;</span>
-            <h2>Opções Selecionadas</h2>
-            <p id="selectedOptions"></p>
-            <div class="popup-buttons">
-                <a href="#" id="copyBtn">Copiar Descrição</a>
-                <a href="#" id="clearBtn">Limpar Tudo</a>
-                <a href="#">Fechar</a>
-            </div>
-        </div>
-    </div>
 
     <script>
         // Função para coletar opções selecionadas
@@ -430,7 +525,7 @@
             let selected = [];
             options.forEach(option => {
                 if (option.checked) {
-                    selected.push(option.nextElementSibling.textContent);
+                    selected.push(option.nextElementSibling.textContent.trim());
                 }
             });
             return selected;
@@ -461,11 +556,23 @@
             showSelectedOptions();
         }
 
+        // Função para enviar a mensagem via WhatsApp
+        function sendToWhatsApp() {
+            const selectedOptions = getSelectedOptions().join('\n');
+            const message = encodeURIComponent('Opções Selecionadas:\n' + selectedOptions);
+            const phoneNumber = '27999101211'; // Número de telefone
+            const url = `https://wa.me/${phoneNumber}?text=${message}`;
+            window.open(url, '_blank');
+        }
+
         document.getElementById('copyBtn').addEventListener('click', copyToClipboard);
         document.getElementById('clearBtn').addEventListener('click', clearAllOptions);
 
         // Atualiza a lista de opções selecionadas ao abrir o pop-up de finalizar pedido
         document.querySelector('a[href="#finalizarPedido"]').addEventListener('click', showSelectedOptions);
+        
+        // Adiciona o evento para o botão de WhatsApp
+        document.getElementById('whatsappBtn').addEventListener('click', sendToWhatsApp);
     </script>
 </body>
 </html>

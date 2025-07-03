@@ -16,11 +16,11 @@
     
         <div class="container">
             <a  class="image-block"></a>
-            <a href="#popup1" class="block">TAMANHO E QUANTIDADE</a>
-            <a href="#popup2" class="block">OPÇÕES DE CARNE</a>
+            <a href="#popup1" class="block">FAZER PEDIDO!</a>
+           <!--DESATIVADOS  <a href="#popup2" class="block">OPÇÕES DE CARNE</a>
             <a href="#popup3" class="block">GUARNIÇÕES</a>
             <a href="#popup4" class="block">SALADAS</a>
-            <a href="#popup5" class="block">BEBIDAS</a>
+            <a href="#popup5" class="block">BEBIDAS</a>DESATIVADOS-->
             
             <a href="#popup6" class="block">FORMA DE PAGAMENTO</a>
             <!--DESATIVADOS
@@ -41,35 +41,37 @@
     <div class="quantidade-options">
         <div class="option">
             <input type="checkbox" id="outra1">
-            <label for="outra1"> <strong>*1 MARMITA*</strong></label>
+            <label for="outra1"> <strong>*1 UNIDADE*|</strong></label>
+            <input type="checkbox" id="outra2">
+            <label for="outra2"><strong>*2 UNIDADES*|</strong></label>
         </div>
         
     </div>
     
                 <div class="separator"></div> <!-- Linha separadora -->
-                <h2>TAMANHO MARMITA</h2>
+                <h2>TIPO DE PEDIDO</h2>
                 <h6 id="umaopção">Selecione 1 opção!</h6>
                 
                     <div class="option">
                         <input type="checkbox" id="saude001" name="tamanho-marmita" value="pequena">
-                        <label for="saude001"><strong><h3 id="pequena">*R$17,00 | PEQUENA - (C/Churrasco R$20,00)*</h3></strong></label>
+                        <label for="saude001"><strong><h3 id="pequena">R$49,99 | FRANGO - (Pedido até 00h Sábado)</h3></strong></label>
                     </div>
                     <div class="option">
                         <input type="checkbox" id="saude002" name="tamanho-marmita" value="grande">
-                        <label for="saude002"><strong>*R$22,00 | GRANDE - (C/Churrasco R$25,00)*</strong></label>
+                        <label for="saude002"><strong>R$55,00 | FRANGO - (Pedido ao Domingo)</strong></label>
                     </div>
     
                 
                 <div class="popup-buttons">
                     <a href="#popup1" class="prev">Anterior</a>
-                    <a href="#popup2" class="next">Próximo</a>
-                    <a href="#finalizarPedido">Finalizar Pedido</a>
+                    <a href="#popup6" class="next" id="PPROXIMO">Próximo</a>
+                    <!-- <a href="#finalizarPedido">Finalizar Pedido</a>-->
                 </div>
             </div>
         </div>
         
     
-        <div id="popup2" class="popup">
+        <!-- <div id="popup2" class="popup">
             <div class="popup-content">
                 <span class="close-btn" onclick="window.location.href='#'">&times;</span>
                 <h2>OPÇÕES DE CARNE</h2>
@@ -159,7 +161,7 @@
                     <a href="#finalizarPedido">Finalizar Pedido</a>
                 </div>
             </div>
-        </div>
+        </div> -->
         
         <div id="popup6" class="popup">
             <div class="popup-content">
@@ -171,8 +173,8 @@
                 
     
                     <div class="popup-buttons">
-                        <a href="#popup5" class="prev">Anterior</a>
-                        <a href="#popup7" class="next">Próximo</a>
+                        <a href="#popup1" class="prev">Anterior</a>
+                       <!-- <a href="#popup7" class="next">Próximo</a>-->
                         <a href="#finalizarPedido">Finalizar Pedido</a>
                     </div>
                 </form>
@@ -254,7 +256,7 @@
         }
 
         .image-block {
-            background-image: url(PRINCIPAL.svg); /* Substitua 'sua-imagem.jpg' pelo caminho da sua imagem */
+            background-image: url(Contatos.png); /* Substitua 'sua-imagem.jpg' pelo caminho da sua imagem */
             background-size: cover;
             background-position: center;
             height: 150px; /* Altura aumentada */
@@ -319,10 +321,14 @@
         }
 
         .popup-buttons a[href="#finalizarPedido"] {
-            background: rgb(241, 7, 7); /* Altere a cor de fundo para verde */
+            background: rgb(34, 170, 15); /* Altere a cor de fundo para verde */
             color: white; /* Garante que o texto do botão seja branco */
         }
 
+        #PPROXIMO{
+            background: rgb(34, 170, 15); /* Altere a cor de fundo para verde */
+            color: white; /* Garante que o texto do botão seja branco */
+        }
 
         .popup-buttons a:hover {
             background: #555;
@@ -559,7 +565,7 @@
         // Função para enviar a mensagem via WhatsApp
         function sendToWhatsApp() {
             const selectedOptions = getSelectedOptions().join('\n');
-            const message = encodeURIComponent('Opções Selecionadas:\n' + selectedOptions);
+            const message = encodeURIComponent('*Opções Selecionadas:*\n' + selectedOptions);
             const phoneNumber = '27999101211'; // Número de telefone
             const url = `https://wa.me/${phoneNumber}?text=${message}`;
             window.open(url, '_blank');
